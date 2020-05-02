@@ -1,147 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Harsh Mahajan</title>
+    <head>
+        <title>Harsh Mahajan</title>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
-      rel="stylesheet"
-    />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <img src="images/harsh_text.png" alt="" />
-      </div>
+    <body>
+        <header>
+            <div class="menu-toggler">
+                <div class="bar half start"></div>
+                <div class="bar half"></div>
+                <div class="bar half end"></div>
+            </div>
 
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
+            <div class="top-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">About Me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#experience" class="nav__link">Experience</a>
-          </li>
-          <li class="nav__item">
-            <a href="#projects" class="nav__link">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            <div class="landing-text">
+                <h1>Harsh Mahajan</h1>
+                <h6>Software Engineer</h6>
+            </div>
+        </header>
 
-    <!-- About Me -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title-intro">
-        Hi, I am <strong>Harsh Mahajan</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">software-dev</p>
-      <img src="images/harsh_photo.jpeg" alt="A picture of Harsh similing" />
-    </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="profile-image">
+                    <img src="harsh.jpeg" alt="" />
+                </div>
 
-    <!-- Projects -->
-    <section class="my-projects" id="projects">
-      <h2 class="section__title">Projects</h2>
+                <div class="about-details">
+                    <div class="about-heading">
+                        <h1>About</h1>
+                        <h6>Myself</h6>
+                    </div>
+                    <p>
+                        Hi! I am Harsh Mahajan, current undergrad at NIT Trichy.
+                        I've published over 10 apps on Google Play Store. I need
+                        to edit this intro further.
+                    </p>
+                </div>
 
-      <div class="projects">
-        <div class="project">
-          <h3>SG Parking</h3>
-          <p>
-            Plan your journey ahead of time by getting all the real time parking
-            lot availabilities powered by Machine Learning
-          </p>
-        </div>
-        <!-- / project -->
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab playstore-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab github-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab linkedin-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <div class="project">
-          <h3>Dalal Street</h3>
-          <p>
-            Are you a stock market enthusiast? Dalal Street is a virtual stock
-            excahnge game powered by GRPC!
-          </p>
-        </div>
-        <!-- / project -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Projects</h1>
+                    <h6>Caution! All these projects are LIVE</h6>
+                </div>
 
-        <div class="project">
-          <h3>Auto-Attendence via Face Recognition</h3>
-          <p>Shows attendence list just by a single click of any classroom!</p>
-        </div>
-        <!-- / project -->
-      </div>
-      <!-- / projects -->
-    </section>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/sg_parking_cover.png" alt="" />
+                    </div>
+                    <div class="portfolio-description">
+                        <h6>Mobile App</h6>
+                        <h1>SG Parking</h1>
+                        <p>
+                            Plan your journey ahead of time by getting all the
+                            real time parking lot availabilities powered by
+                            Machine Learning.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.hmproductions.sgcarpark" class="cta">Play Store Link</a>
+                    </div>
+                </div> <!-- portfolio-item -->
 
-    <!-- Experience -->
-    <section class="experience" id="experience">
-      <h2 class="section__title section__title--experience">Who I am</h2>
-      <p class="section__subtitle section__subtitle--experience"></p>
-
-      <div class="experience__body">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue
-          magna, tincidunt tincidunt nunc a, varius volutpat metus. Phasellus
-          semper nunc enim, in pretium elit vestibulum et. Donec nibh enim,
-          auctor eget cursus ac, feugiat sed sem. In semper urna eget ante
-          dictum, a porttitor ante scelerisque. Morbi maximus leo lacus, eu
-          vulputate urna feugiat ac.
-        </p>
-        <p>
-          Nullam sagittis dapibus dui ultrices pharetra. Pellentesque
-          vestibulum, turpis non vulputate egestas, lorem nunc fermentum justo,
-          quis feugiat lorem lorem vel odio. Phasellus ipsum massa, cursus in
-          ligula in, tincidunt rutrum purus. Maecenas ultricies arcu vitae
-          pharetra vulputate.
-        </p>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <p class="section__subtitle"></p>
-
-      <div class="contact">
-        <!-- Contact item 01 -->
-        <a href="#" class="contact__item">
-          <img src="images/contact-01.png" alt="" class="contact__img" />
-        </a>
-
-        <!-- Contact item 02 -->
-        <a href="#" class="contact__item">
-          <img src="images/contact-02.png" alt="" class="contact__img" />
-        </a>
-
-        <!-- Contact item 03 -->
-        <a href="#" class="contact__item">
-          <img src="images/contact-03.png" alt="" class="contact__img" />
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <a href="mailto:harshmahajan927@gmail.com">harshmahajan927@gmail.com</a>
-    </footer>
-  </body>
+                <div class="portfolio-item">
+                    <div class="portfolio-description">
+                        <h6>Virtual Stock Exchange Game</h6>
+                        <h1>Dalal Street</h1>
+                        <p>
+                            Are you a stock market enthusiast? Dalal Street is a
+                            virtual stock exchange game built using GRPC!
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=org.pragyan.dalal18"" class="cta">Play Store Link</a>
+                    </div>
+                    <div class="portfolio-image">
+                        <img src="images/dalal_cover.png" alt="" />
+                    </div>
+                </div> <!-- portfolio-item -->
+            </div> <!-- projects container -->
+        </section>
+    </body>
 </html>
