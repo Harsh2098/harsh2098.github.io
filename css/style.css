@@ -515,6 +515,10 @@ input[type="submit"]:hover {
         font-size: 2rem;
     }
 
+    .about .container {
+        flex-direction: column;
+    }
+
     .about-details .nav-list {
         flex-direction: initial;
     }
@@ -550,5 +554,49 @@ input[type="submit"]:hover {
 
     .timeline .date::before {
         left: -16.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggler {
+        top: 2rem;
+        right: 2rem;
+        width: 3rem;
+        height: 2rem;
+    }
+
+    .landing-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .landing-text h6 {
+        font-size: 1rem;
+    }
+
+    .has-margin-right {
+        margin-right: 2rem;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+    }
+
+    .portfolio-image {
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+
+    .portfolio-description {
+        order: 2;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .up {
+        width: 4rem;
+        height: 4rem;
+        right: 2rem;
     }
 }
