@@ -9,7 +9,7 @@
 html {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color: white;
+    color: #ddd;
 }
 
 body {
@@ -18,6 +18,7 @@ body {
     --subtle-dark-background: #2d2e2e;
 
     --moderate-padding: 4rem;
+    --minimal-padding: 2rem;
 
     --larger-font-size: 4rem;
     --large-font-size: 2rem;
@@ -25,31 +26,64 @@ body {
     --small-font-size: 1rem;
 
     --gray-font-color: #888;
-    --accent-color: cyan;
+    --primary-accent-color: cyan;
+    --secondary-accent-color: yellowgreen;
+
+    --default-line-height: 1.5rem
 }
 
 a {
     text-decoration: none;
     color: #eeeeee;
+    transition: color 650ms;
 }
 
 ul {
     list-style: none;
 }
 
-.generic-light-container {
+h6 {
+    text-transform: uppercase;
+    font-size: var(--small-font-size);
+    color: gray;
+}
+
+.generic-container {
     display: flex;
 }
 
-.generic-light-container .left-container {
-    width: 40%;
-    height: 100vh;
+.generic-container .left-container {
+    width: 30%;
     position: relative;
     background: var(--moderate-dark-background);
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
     padding: var(--moderate-padding);
+}
+
+.generic-container .right-container {
+    width: 70%;
+    position: relative;
+    padding: var(--moderate-padding);
+    background: var(--subtle-dark-background);
+}
+
+/* End generic styling */
+
+/* Start Header */
+
+.header-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-container img {
+    border: 2px solid white;
+    border-radius: 100%;
 }
 
 .my-photo {
@@ -57,20 +91,9 @@ ul {
     height: 12rem;
 }
 
-.generic-light-container .right-container {
-    width: 60%;
-    height: 100vh;
-    position: relative;
-    padding: var(--moderate-padding);
-    background: var(--subtle-dark-background);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .first-name {
     font-size: var(--larger-font-size);
-    color: var(--accent-color);
+    color: var(--primary-accent-color);
 }
 
 .last-name {
@@ -92,6 +115,14 @@ ul {
     padding: 2rem 1rem;
 }
 
+.quick-links i {
+    transition: color 650ms;cursor: pointer;
+}
+
+.quick-links i:hover {
+    color: var(--primary-accent-color);
+}
+
 .more-details {
     position: absolute;
     bottom: 0;
@@ -99,18 +130,18 @@ ul {
     margin-left: 4rem;
     margin-bottom: 2rem;
     display: flex;
-    border: top solid 4px var(--gray-font-color);
+    border-top: 2px solid var(--gray-font-color);
 }
 
 .extra-detail {
     padding: 2rem;
-    color: var(--gray-font-color);
 }
 
-.extra-detail h6 {
+.more-details-title {
     margin-bottom: 1.5rem;
     font-size: var(--medium-font-size);
     font-weight: 100;
+    color: var(--gray-font-color);
 }
 
 .extra-detail p {
@@ -121,6 +152,76 @@ ul {
     cursor: pointer;
 }
 
-.extra-detail p:hover {
-    color: var(--accent-color);
+.extra-detail p:hover,
+.extra-detail a:hover {
+    color: var(--secondary-accent-color);
 }
+
+/* Start About */
+
+.about-container .left-container {
+    background: var(--very-dark-background);
+    line-height: var(--default-line-height);
+}
+
+.about-container .right-container {
+    background: var(--moderate-dark-background);
+}
+
+.about-container .left-container p {
+    font-size: var(--tiny-font-size);
+}
+
+.about-container .right-container p {
+    padding: 0 var(--minimal-padding);
+    line-height: var(--default-line-height);
+}
+
+/* End About */
+
+/* Start Projects */
+
+.projects-container .left-container p {
+    font-size: var(--tiny-font-size);
+    line-height: var(--default-line-height);
+}
+
+.projects-container .right-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    line-height: var(--default-line-height);
+    max-width: 18rem;
+}
+
+.project-item h6 {
+    color: var(--primary-accent-color);
+    transition: color 650ms;
+    cursor: pointer;
+}
+
+.project-item img {
+    max-width: 10rem;
+}
+
+.project-item h6:hover {
+    color: white;
+}
+
+/* End Projects */
+
+/* Start Copyright */
+
+.copyright {
+    background-color: var(--very-dark-background);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* End Copyright */
