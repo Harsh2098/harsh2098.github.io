@@ -16,7 +16,7 @@
         />
 
         <link
-            href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto@1&display=swap"
             rel="stylesheet"
         />
 
@@ -28,222 +28,86 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="main.js"></script>
 
-        <header>
-            <div class="menu-toggler">
-                <div class="bar half start"></div>
-                <div class="bar"></div>
-                <div class="bar half end"></div>
-            </div>
-
-            <div class="top-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About Me</a></li>
-                    <li>
-                        <a href="#experience" class="nav-link">Experience</a>
-                    </li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="landing-text">
-                <h1>Harsh Mahajan</h1>
-                <h6>App Developer | Software Engineer</h6>
-            </div>
-        </header>
-
-        <section class="about" id="about">
-            <div class="container">
-                <div
-                    class="profile-image"
-                    data-aos="fade-right"
-                    data-aos-delay="300"
-                >
-                    <img src="images/harsh_photo.jpeg" alt="" />
+        <section class="home" id="home">
+            <div class="generic-light-container">
+                <div class="left-container">
+                    <img
+                        class="my-photo"
+                        src="/images/harsh_photo.jpeg"
+                        alt="Harsh smiling blatantly"
+                    />
                 </div>
-
-                <div
-                    class="about-details"
-                    data-aos="fade-left"
-                    data-aos-delay="300"
-                >
-                    <div class="about-heading">
-                        <h1>About</h1>
-                        <h6>Me</h6>
+                <div class="right-container">
+                    <div class="first-name">Harsh</div>
+                    <div class="last-name">Mahajan</div>
+                    <div class="short-description">
+                        I &#9829; to make cool stuff!
                     </div>
-                    <p>
-                        Hi! I am Harsh Mahajan, current undergrad at NIT Trichy.
-                        I've published over 10 apps on Google Play Store. I need
-                        to edit this intro further.
-                    </p>
-                    <div class="social-media">
-                        <ul class="nav-list">
-                            <li>
-                                <a
-                                    href="https://www.facebook.com/harsh.mahajan.1213/"
-                                    class="icon-link"
-                                >
-                                    <i class="fab fa-facebook-square"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/Harsh2098"
-                                    class="icon-link"
-                                >
-                                    <i class="fab fa-github-square"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.linkedin.com/in/harshmahajan2098/"
-                                    class="icon-link"
-                                >
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- / Social Media -->
-                </div>
-            </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Projects</h1>
-                    <h6>Caution! All these projects are LIVE</h6>
-                </div>
-
-                <div
-                    class="portfolio-item"
-                    data-aos="fade-right"
-                    data-aos-delay="300"
-                >
-                    <div class="portfolio-image has-margin-right">
-                        <img src="images/sg_parking_cover.png" alt="" />
-                    </div>
-                    <div class="portfolio-description">
-                        <h6>Commute</h6>
-                        <h1>SG Parking</h1>
-                        <p>
-                            Plan your journey ahead of time by getting all the
-                            real time parking lot availabilities powered by
-                            Machine Learning.
-                        </p>
-                        <a
-                            href="https://play.google.com/store/apps/details?id=com.hmproductions.sgcarpark"
-                            class="cta"
-                            >Play Store Link</a
-                        >
-                    </div>
-                </div>
-                <!-- portfolio-item -->
-
-                <div
-                    class="portfolio-item"
-                    data-aos="fade-left"
-                    data-aos-delay="300"
-                >
-                    <div class="portfolio-description has-margin-right">
-                        <h6>Virtual Stock Exchange Game</h6>
-                        <h1>Dalal Street</h1>
-                        <p>
-                            Are you a stock market enthusiast? Dalal Street is a
-                            virtual stock exchange game built using GRPC!
-                        </p>
-                        <a
-                            href="https://play.google.com/store/apps/details?id=org.pragyan.dalal18"
-                            class="cta"
-                            >Play Store Link</a
-                        >
-                    </div>
-                    <div class="portfolio-image">
-                        <img src="images/dalal_cover.png" alt="" />
-                    </div>
-                </div>
-                <!-- portfolio-item -->
-            </div>
-            <!-- projects container -->
-        </section>
-
-        <section class="experience" id="experience">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Work Experience</h1>
-                    <h6>Internships and Jobs</h6>
-                </div>
-
-                <div class="timeline">
-                    <ul>
-                        <li class="date" data-date="May - July 2019">
-                            <h1 data-aos="fade-left" data-aos-delay="300"></h1>
-                                Microland
-                            </h1>
-                            <p data-aos="fade-left" data-aos-delay="300">
-                                Developed an API capable of extracting and
-                                parsing data from any IT Service Management tool
-                                like ServiceNow ITSM. API contains highly
-                                configurable settings to display data as per
-                                admin rules. API was written using Express
-                                framework and tested using Mocha framework.
-                            </p>
+                    <ul class="quick-links">
+                        <li>
+                            <a
+                                href="https://www.facebook.com/harsh.mahajan.1213/"
+                            >
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
                         </li>
-
-                        <li class="date" data-date="May - July 2018">
-                            <h1 data-aos="fade-left" data-aos-delay="300">
-                                Lemnis Technologies
-                            </h1>
-                            <p data-aos="fade-left" data-aos-delay="300">
-                                Developed an app for varifocal standalone VR
-                                headset to work with Daydream SDK. Added android
-                                Jetpack components to the existing Lemnis
-                                service which reduced boilerplate code by 40%.
-                                As part of another project, I also created
-                                simplified static environments using Google
-                                Seurat for 6 Degree of Freedom VR headset.
-                            </p>
+                        <li>
+                            <a href="https://github.com/Harsh2098">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/harshmahajan2098/"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/files/Resume_Harsh_Mahajan.pdf">
+                                <i class="far fa-file-pdf"></i>
+                            </a>
                         </li>
                     </ul>
+
+                    <div class="more-details">
+                        <div class="extra-detail">
+                            <h6>Location</h6>
+                            <p>Singapore</p>
+                        </div>
+                        <div class="extra-detail">
+                            <h6>College</h6>
+                            <p>
+                                <a class="generic-link" href="https://nitt.edu"
+                                    >NIT Trichy</a
+                                >
+                            </p>
+                        </div>
+                        <div class="extra-detail">
+                            <h6>Web</h6>
+                            <p>
+                                <a
+                                    class="generic-link"
+                                    href="https://www.harshmahajan.dev"
+                                    >harshmahajan.dev</a
+                                >
+                            </p>
+                        </div>
+                        <div class="extra-detail">
+                            <h6>Email</h6>
+                            <p>
+                                <a href="mailto:harshmahajan927@gmail.com"
+                                    >harshmahajan927@gmail.com</a
+                                >
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <!-- timeline -->
+                <!-- End right container -->
             </div>
-            <!-- experience container -->
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Contact</h1>
-                    <h6>Let's work together</h6>
-                </div>
-
-                <form action="#" data-aos="fade-up" data-aos-delay="300">
-                    <label for="name">Name: </label>
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Enter your name..."
-                    />
-                    <label for="email">Email: </label>
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Enter your email..."
-                    />
-
-                    <input type="submit" value="Submit" />
-                </form>
-            </div>
-            <!-- contact container -->
         </section>
 
         <footer class="copyright">
-            <div class="up" id="up">
-                <i class="fas fa-chevron-up"></i>
-            </div>
             <p>&copy; 2020 Harsh Mahajan</p>
         </footer>
     </body>
