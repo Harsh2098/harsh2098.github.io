@@ -9,7 +9,7 @@
 html {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color: #ddd;
+    color: gainsboro;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
     --primary-accent-color: cyan;
     --secondary-accent-color: yellowgreen;
 
-    --default-line-height: 1.5rem
+    --default-line-height: 1.5rem;
 }
 
 a {
@@ -48,6 +48,16 @@ h6 {
     color: gray;
 }
 
+i {
+    transition: color 650ms;
+    cursor: pointer;
+    padding: 0.8rem 0;
+}
+
+i:hover {
+    color: var(--primary-accent-color);
+}
+
 .generic-container {
     display: flex;
 }
@@ -59,6 +69,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    text-align: right;
     flex-direction: column;
     padding: var(--moderate-padding);
 }
@@ -113,14 +124,6 @@ h6 {
 .quick-links li {
     font-size: 2rem;
     padding: 2rem 1rem;
-}
-
-.quick-links i {
-    transition: color 650ms;cursor: pointer;
-}
-
-.quick-links i:hover {
-    color: var(--primary-accent-color);
 }
 
 .more-details {
@@ -190,6 +193,14 @@ h6 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.projects-container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: var(--minimal-padding);
 }
 
 .project-item {
@@ -197,6 +208,7 @@ h6 {
     flex-direction: column;
     line-height: var(--default-line-height);
     max-width: 18rem;
+    color: gainsboro;
 }
 
 .project-item h6 {
@@ -209,11 +221,33 @@ h6 {
     max-width: 10rem;
 }
 
+.project-item i {
+    font-size: 2.8rem;
+    margin-top: -0.4rem;
+}
+
 .project-item h6:hover {
     color: white;
 }
 
 /* End Projects */
+
+/* Start Skills */
+
+.skills-container .left-container {
+    background: var(--very-dark-background);
+    line-height: var(--default-line-height);
+}
+
+.skills-container .right-container {
+    background: var(--moderate-dark-background);
+}
+
+.skills-container .left-container p {
+    font-size: var(--tiny-font-size);
+}
+
+/* End Skills */
 
 /* Start Copyright */
 
