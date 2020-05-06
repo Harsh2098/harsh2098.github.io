@@ -1,31 +1,13 @@
 $(document).ready(function () {
-    $(".menu-toggler").on("click", function () {
-        $(this).toggleClass("open");
-        $(".top-nav").toggleClass("open");
-    });
-
-    $(".top-nav .nav-link").on("click", function () {
-        $(".menu-toggler").removeClass("open");
-        $(".top-nav").removeClass("open");
-    });
-
-    $('nav a[href*="#"]').on("click", function () {
-        $("html, body").animate(
-            {
-                scrollTop: $($(this).attr("href")).offset().top - 100,
-            },
-            2000
-        );
-    });
-
-    $("#up").on("click", function () {
-        $("html, body").animate(
-            {
-                scrollTop: 0,
-            },
-            2000
-        );
-    });
+    const progressBars = document.getElementsByClassName("progress-bar");
+    setInterval(() => {
+        console.log(progressBars.size)
+        for(var i=0 ; i<progressBars.length ; ++i) {
+            const computedStyle = getComputedStyle(progressBars[i]);
+            const width = parseFloat(computedStyle.getPropertyValue("--width")) || 0;
+            progressBars[i].style.setProperty("--width", width + 0.2);
+        }
+    }, 5);
 
     AOS.init({
         easing: "ease",

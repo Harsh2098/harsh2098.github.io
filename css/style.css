@@ -20,6 +20,8 @@ body {
     --moderate-padding: 4rem;
     --minimal-padding: 2rem;
 
+    --minimal-margin: 0.8rem;
+
     --larger-font-size: 4rem;
     --large-font-size: 2rem;
     --medium-font-size: 1.2rem;
@@ -45,7 +47,7 @@ ul {
 h6 {
     text-transform: uppercase;
     font-size: var(--small-font-size);
-    color: gray;
+    color: #aaa;
 }
 
 i {
@@ -79,6 +81,32 @@ i:hover {
     position: relative;
     padding: var(--moderate-padding);
     background: var(--subtle-dark-background);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: var(--minimal-padding);
+}
+
+.progress-bar {
+    width: 20rem;
+    height: 0.5rem;
+    background-color: gray;
+    border-radius: 1rem;
+    margin-top: var(--minimal-margin);
+}
+
+.progress-bar::before {
+    content: "";
+    background-color: var(--primary-accent-color);
+    width: calc(var(--width, 0) * 1%);
+    height: 0.5rem;
+    min-width: 2rem;
+    max-width: calc(var(--progress, 100) * 1%);
+    border-radius: 1rem;
+    display: flex;
 }
 
 /* End generic styling */
@@ -196,13 +224,6 @@ i:hover {
     flex-direction: column;
 }
 
-.projects-container .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: var(--minimal-padding);
-}
-
 .project-item {
     display: flex;
     flex-direction: column;
@@ -224,6 +245,7 @@ i:hover {
 .project-item i {
     font-size: 2.8rem;
     margin-top: -0.4rem;
+    margin-left: 0.75rem;
 }
 
 .project-item h6:hover {
