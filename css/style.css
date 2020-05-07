@@ -19,6 +19,7 @@ body {
 
     --moderate-padding: 4rem;
     --minimal-padding: 2rem;
+    --tiny-padding: 0.2rem;
 
     --minimal-margin: 0.8rem;
 
@@ -26,6 +27,7 @@ body {
     --large-font-size: 2rem;
     --medium-font-size: 1.2rem;
     --small-font-size: 1rem;
+    --tiny-font-size: 0.8rem;
 
     --gray-font-color: #888;
     --primary-accent-color: cyan;
@@ -69,11 +71,15 @@ i:hover {
     position: relative;
     background: var(--moderate-dark-background);
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     text-align: right;
     flex-direction: column;
     padding: var(--moderate-padding);
+}
+
+.generic-container .left-container p {
+    font-size: var(--tiny-font-size);
+    line-height: var(--default-line-height);
 }
 
 .generic-container .right-container {
@@ -199,10 +205,6 @@ i:hover {
     background: var(--moderate-dark-background);
 }
 
-.about-container .left-container p {
-    font-size: var(--tiny-font-size);
-}
-
 .about-container .right-container p {
     padding: 0 var(--minimal-padding);
     line-height: var(--default-line-height);
@@ -211,11 +213,6 @@ i:hover {
 /* End About */
 
 /* Start Projects */
-
-.projects-container .left-container p {
-    font-size: var(--tiny-font-size);
-    line-height: var(--default-line-height);
-}
 
 .projects-container .right-container {
     display: flex;
@@ -258,18 +255,63 @@ i:hover {
 
 .skills-container .left-container {
     background: var(--very-dark-background);
-    line-height: var(--default-line-height);
 }
 
 .skills-container .right-container {
     background: var(--moderate-dark-background);
 }
 
-.skills-container .left-container p {
+/* End Skills */
+
+/* Start experience */
+
+.experience-container .right-container {
+    padding-bottom: 0;
+}
+
+.experience-item {
+    border-left: 4px solid var(--gray-font-color);
+}
+
+.experience-item p {
+    width: 60%;
+    color: var(--gray-font-color);
+    line-height: var(--default-line-height);
+}
+
+.experience-item .row {
+    padding-top: 0;
+    padding-bottom: var(--minimal-padding);
+}
+
+.experience-item .exp-dates-location {
+    color: var(--gray-font-color);
+    font-size: var(--tiny-font-size);
+    padding: var(--tiny-padding);
+}
+
+.experience-titbit {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: var(--minimal-padding);
+}
+
+.experience-titbit::before {
+}
+
+.exp-title {
+    padding: var(--tiny-padding);
+    text-transform: uppercase;
+}
+
+.exp-position {
+    padding: var(--tiny-padding);
     font-size: var(--tiny-font-size);
 }
 
-/* End Skills */
+/* End experience */
 
 /* Start Copyright */
 
