@@ -94,6 +94,7 @@ i:hover {
     flex-direction: row;
     justify-content: space-evenly;
     padding: var(--minimal-padding);
+    position: relative;
 }
 
 .progress-bar {
@@ -121,14 +122,30 @@ i:hover {
 
 .header-container {
     height: 100vh;
+}
+
+.header-container .left-container {
+    width: 30%;
+    position: relative;
+    background: var(--moderate-dark-background);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: var(--moderate-padding);
+}
+
+.header-container .left-container img {
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.header-container .right-container {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.left-container img {
-    border: 2px solid white;
-    border-radius: 100%;
 }
 
 .my-photo {
@@ -237,12 +254,13 @@ i:hover {
 
 .project-item img {
     max-width: 10rem;
+    margin-left: -0.75rem;
+    margin-top: 0.2rem;
 }
 
 .project-item i {
     font-size: 2.8rem;
     margin-top: -0.4rem;
-    margin-left: 0.75rem;
 }
 
 .project-item h6:hover {
@@ -269,22 +287,23 @@ i:hover {
     padding-bottom: 0;
 }
 
-.experience-item {
+.experiences {
     border-left: 4px solid var(--gray-font-color);
 }
 
-.experience-item p {
+.experiences p {
     width: 60%;
     color: var(--gray-font-color);
     line-height: var(--default-line-height);
+    padding-left: var(--minimal-padding);
 }
 
-.experience-item .row {
+.experiences .row {
     padding-top: 0;
     padding-bottom: var(--minimal-padding);
 }
 
-.experience-item .exp-dates-location {
+.exp-dates-location {
     color: var(--gray-font-color);
     font-size: var(--tiny-font-size);
     padding: var(--tiny-padding);
@@ -299,6 +318,15 @@ i:hover {
 }
 
 .experience-titbit::before {
+    content: "";
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    left: -0.55rem;
+    top: 0.2rem;
+    box-shadow: 0 0 0 6px var(--subtle-dark-background);
+    background-color: var(--primary-accent-color);
 }
 
 .exp-title {
@@ -312,6 +340,64 @@ i:hover {
 }
 
 /* End experience */
+
+/* Start education */
+
+.education-container .left-container {
+    background: var(--very-dark-background);
+}
+
+.education-container .right-container {
+    background: var(--moderate-dark-background);
+    padding-top: 0;
+}
+
+.educations {
+    border-left: 4px solid var(--gray-font-color);
+}
+
+.educations p {
+    width: 60%;
+    color: var(--gray-font-color);
+    line-height: var(--default-line-height);
+    padding-left: var(--minimal-padding);
+}
+
+.educations .row {
+    padding-bottom: var(--minimal-padding);
+}
+
+.education-titbit {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: var(--minimal-padding);
+}
+
+.education-titbit::before {
+    content: "";
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    left: -0.55rem;
+    top: 2.4rem;
+    box-shadow: 0 0 0 6px var(--subtle-dark-background);
+    background-color: var(--primary-accent-color);
+}
+
+.educations::after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    left: 3.6rem;
+    bottom: 3.8rem;
+    background-color: var(--gray-font-color);
+}
+
+/* End education */
 
 /* Start Copyright */
 
