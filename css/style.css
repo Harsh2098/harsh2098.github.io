@@ -633,7 +633,6 @@ i:hover {
     }
 
     .more-details-title {
-        margin: 1rem;
         font-size: var(--small-font-size);
         font-weight: 100;
         color: var(--gray-font-color);
