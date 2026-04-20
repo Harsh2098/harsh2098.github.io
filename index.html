@@ -3,19 +3,21 @@
 
 <head>
     <title>Harsh Mahajan</title>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Harsh Mahajan - Bending Space | Code | Time" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto@1&display=swap" rel="stylesheet" />
-
     <link rel="shortcut icon" href="files/favicon.ico" />
-
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -24,392 +26,218 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
 
-    <header>
-        <div class="generic-container header-container">
-            <div class="left-container">
-                <img class="my-photo" src="/images/harsh_photo.jpeg" alt="Harsh smiling blatantly" />
-            </div> <!-- End left container -->
-            <div class="right-container">
-                <div class="first-name">Harsh</div>
-                <div class="last-name">Mahajan</div>
-                <div class="short-description">
-                    I &#9829; to make cool stuff!
+    <div class="background-glow"></div>
+    <div class="background-grid"></div>
+
+    <main class="content-wrapper">
+        <header id="hero" class="glass-panel" data-aos="fade-in">
+            <div class="hero-content">
+                <div class="profile-img-container">
+                    <img class="my-photo" src="/images/harsh_photo.jpg" alt="Harsh Mahajan" />
                 </div>
-                <ul class="quick-links">
-                    <li>
-                        <a href="https://www.facebook.com/harsh.mahajan.1213/">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Harsh2098">
-                            <i class="fab fa-github-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/harshmahajan2098/">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/files/Resume_Harsh_Mahajan.pdf">
-                            <i class="far fa-file-pdf"></i>
-                        </a>
-                    </li>
-                </ul>
+                <div class="hero-text">
+                    <h1><span class="text-neon-cyan">Harsh</span> <span class="text-white">Mahajan</span></h1>
+                    <p class="subtitle">Bending Space | Code | Time</p>
+                    <p class="description">Currently working in Apps & RN team at Shopee Singapore. Published over 10
+                        apps on Google Play Store.</p>
 
-                <div class="more-details">
-                    <div class="extra-detail">
-                        <div class="more-details-title">Location</div>
-                        <p>Singapore</p>
-                    </div>
-                    <div class="extra-detail">
-                        <div class="more-details-title">University</div>
-                        <p>
-                            <a class="generic-link" href="https://nitt.edu">NIT Trichy</a>
-                        </p>
-                    </div>
-                    <div class="extra-detail">
-                        <div class="more-details-title">Web</div>
-                        <p>
-                            <a class="generic-link" href="https://www.harshmahajan.dev">harshmahajan.dev</a>
-                        </p>
-                    </div>
-                    <div class="extra-detail">
-                        <div class="more-details-title">Email</div>
-                        <p>
-                            <a href="mailto:harshmahajan927@gmail.com">harshmahajan927@gmail.com</a>
-                        </p>
-                    </div>
-                </div> <!-- End more details -->
-            </div> <!-- End right container -->
-        </div> <!-- End generic container -->
-    </header>
-
-    <section class="about" id="about">
-        <div class="generic-container about-container">
-            <div class="left-container">
-                <h6>About</h6>
-                <p>Bending Space | Code | Time</p>
-            </div>
-            <div class="right-container">
-                <p>
-                    Hi there! I am Harsh, currently working in Apps & RN team at Shopee Singapore. I have published over 10 apps on Google Play Store. 
-                    Most of these project ideas were born while thinking about things from my everyday life.
-                    In December 2019, I along with another teammate and guide published paper at NPEC 2019, an IEEE
-                    Conference.
-                </p>
-                <br><br>
-                <p>
-                    Being core member of Delta Force club at NIT Trichy, I've worked with the app and web infrastructure of our
-                    college. At Delta, we adopt the industry standard practices for product development, project management and bug tracking.
-                    In my free time, I upload videos on YouTube of me playing &#x1f3b9;.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="publications" id="publications">
-        <div class="generic-container publications-container">
-            <div class="left-container">
-                <h6>Publications & Certifications</h6>
-                <p>Research work</p>
-            </div>
-            <div class="right-container">
-                <div class="row pub-item-circular">
-                    <div class="pub-image-item">
-                        <img src="/images/plc.png" alt="SLC Badge">
-                    </div>
-                    <div class="pub-description">
-                        <h6>Play Store Listing Certificate (Marketing)</h6>
-                        <p>Certification corresponds to marketing proficiency in telling app's story through store listing, knowledge about the tools to grow the app 
-                            and how to market to a global audience.</p>
-                        <div class="pub-link"><a
-                                href="https://drive.google.com/file/d/1b5V6qDp2g-VLI12yiUdX0NpMRAfPO3GH/view?usp=sharing">View
-                                Certificate</a></div>
-                    </div>
-                </div>
-                <div class="row pub-item-rectangle">
-                    <div class="pub-image-item">
-                        <img src="/images/ieee.png" alt="IEEE Logo">
-                    </div>
-
-                    <div class="pub-description">
-                        <h6>Android Application Based Parameter Analysis of Induction Motor</h6>
-                        <p>Engineering education has been
-                            experiencing a paradigm shift from chalk and talk towards digital aids. This paper presents
-                            one
-                            such android application to predict the performance of an induction machine. </p>
-                        <div class="pub-link"><a href="https://ieeexplore.ieee.org/document/9034711">View Research
-                                Paper</a></div>
-                    </div>
-                </div>
-                <div class="row pub-item-circular">
-                    <div class="pub-image-item">
-                        <img src="/images/aad_badge.png" alt="AAD Badge">
-                    </div>
-                    <div class="pub-description">
-                        <h6>Google Certified Associate Android Developer</h6>
-                        <p>Certification corresponds to skills and knowledge involving Application user
-                            interface (UI|UX), Fundamental application components, Persistent data storage, Enhanced
-                            system
-                            integration
-                            and Testing & debugging.</p>
-                        <div class="pub-link"><a
-                                href="https://www.credential.net/credential-redirect/5ze1pajg?key=9b206ae91037cb3f39c119c6e869aa8ef884c870859cd1aa6be3d3eceb1b43bc">View
-                                Certificate</a></div>
+                    <ul class="quick-links">
+                        <li><a href="https://github.com/Harsh2098" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/harshmahajan2098/" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="/files/Resume_Harsh_Mahajan.pdf" aria-label="Resume"><i
+                                    class="fas fa-file-pdf"></i></a></li>
+                        <li><a href="mailto:harshmahajan927@gmail.com" aria-label="Email"><i
+                                    class="fas fa-envelope"></i></a></li>
+                    </ul>
+                    <div class="hero-details">
+                        <div class="detail-item"><i class="fas fa-map-marker-alt"></i> Singapore</div>
+                        <div class="detail-item"><i class="fas fa-laptop-code"></i> Engineering, NIT Trichy</div>
+                        <div class="detail-item"><i class="fas fa-user-tie"></i> MBA, NUS Business School</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section class="projects" id="projects">
-        <div class="generic-container projects-container">
-            <div class="left-container">
-                <h6>Projects</h6>
-                <p>Caution! All these are LIVE!</p>
-            </div>
-            <div class="right-container">
-                <div class="row">
-                    <div class="project-item">
-                        <h6>SG Bus Buddy</h6>
-                        <p>SG Bus Buddy instantly shows you the bus timings you want to see with just a single tap. 110K+ downloads with rating 4.6/5.0. 
-                            Ranked #2 in Maps & Navigation category.</p>
-                        <a
-                            href='https://play.google.com/store/apps/details?id=com.hmproductions.sgbuses&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                            <img alt='Get it on Google Play'
-                                src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
-                        </a>
+        <section id="entrepreneurship" class="section-container" data-aos="fade-up">
+            <h2 class="section-title">Entrepreneurship <span class="text-neon-orange">Experience</span></h2>
+            <div class="glass-card featured-card">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>SG Bus Buddy</h3>
+                        <span class="badge neon-orange-badge">Founder</span>
                     </div>
-
-                    <div class="project-item">
-                        <h6>Dalal Street</h6>
-                        <p>Mutliplayer virtual stock exchange game powered by protocol buffers and GRPC! Game also
-                            includes intelligent AI to stabilise the market.</p>
-                        <a
-                            href='https://play.google.com/store/apps/details?id=org.pragyan.dalal18&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                            <img alt='Get it on Google Play'
-                                src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
-                        </a>
-                    </div>
-                </div> <!-- End row -->
-
-                <div class="row">
-                    <div class="project-item">
-                        <h6>Facewatch</h6>
-                        <p>Snap a photo of any classroom and the mobile app will generate the attendence list using
-                            facial recognition. App is backed by a lightweight Express API.</p>
-                        <a href='https://github.com/harsh2098/facenet-api'>
-                            <i class="fab fa-github-square"></i>
-                        </a>
-                    </div>
-
-                    <div class="project-item">
-                        <h6>Bridge</h6>
-                        <p>Bridge offers a forum to exchange knowledge
-                            and interview experience, aiming to bridge the communication gap in the student community.
-                        </p>
-                        <a
-                            href='https://play.google.com/store/apps/details?id=com.maverick.bridge&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
-                                alt='Get it on Google Play'
-                                src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
-                    </div>
-                </div> <!-- End row -->
-            </div> <!-- End right container -->
-        </div>
-    </section>
-
-    <section class="skills" id="skills">
-        <div class="generic-container skills-container">
-            <div class="left-container">
-                <h6>Skills</h6>
-                <p>A lot of time has been invested!</p>
-            </div>
-            <div class="right-container">
-                <div class="row">
-                    <div class="skill-item">
-                        <h6>C++</h6>
-                        <div class="progress-bar" style="--width: 20; --progress:100"></div>
-                    </div>
-                    <div class="skill-item">
-                        <h6>Kotlin</h6>
-                        <div class="progress-bar" style="--width: 20; --progress:90"></div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="skill-item">
-                        <h6>Android Development</h6>
-                        <div class="progress-bar" style="--width: 20; --progress:100"></div>
-                    </div>
-                    <div class="skill-item">
-                        <h6>Java</h6>
-                        <div class="progress-bar" style="--width: 20; --progress:80"></div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="skill-item">
-                        <h6>Git (VCS)</h6>
-                        <div class="progress-bar" style="--width: 20; --progress:100"></div>
-                    </div>
-                    <div class="skill-item">
-                        <h6>Go</h6>
-                        <div class="progress-bar" style="--width: 20; --progress:70"></div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="skill-item">
-                        <h6>Docker</h6>
-                        <div class="progress-bar" style="--width: 20; --progress:70"></div>
-                    </div>
-                    <div class="skill-item">
-                        <h6>MySQL</h6>
-                        <div class="progress-bar" style="--width: 20; --progress:70"></div>
+                    <ul class="experience-list">
+                        <li>Developed Android and iOS apps for real-time bus arrival timings in Singapore, Hong Kong,
+                            and Madrid. Manage $1500 monthly marketing/advertising budget and a team of 3 external
+                            resources.</li>
+                        <li>Achieved <strong>500,000+ downloads</strong> with a 4.6/5.0 rating. Generated substantial
+                            annual revenue
+                            via AdMob and premium purchases.</li>
+                        <li>Secured exclusive access to LTA's restricted APIs. Developed middleware using Express
+                            serving <strong>250,000+ queries/day</strong>, hosted on GCP Cloud Run.</li>
+                        <li>Consistently ranked top 5 in Maps & Navigation category on Google Play Store and App Store.
+                        </li>
+                    </ul>
+                    <div class="card-actions" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <a href="https://busbuddy.app" class="btn btn-primary-orange" target="_blank"><i
+                                class="fas fa-external-link-alt"></i> Visit busbuddy.app</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.hmproductions.sgbuses"
+                            class="btn btn-outline" target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
+                        <a href="https://apps.apple.com/app/sg-bus-buddy/id6446060002" class="btn btn-outline"
+                            target="_blank"><i class="fab fa-apple"></i> App Store</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="experience" id="experience">
-        <div class="generic-container experience-container">
-            <div class="left-container">
-                <h6>Experience</h6>
-                <p>Who said I am a fresher!</p>
+            <div class="glass-card featured-card purple" style="margin-top: 2rem;">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Splizzy - Expense Splitter</h3>
+                        <span class="badge neon-purple-badge">Creator</span>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Developed a seamless expense splitting application enabling users to split bills quickly and
+                            easily.</li>
+                        <li>Designed with privacy and convenience in mind: <strong>No transaction limits</strong> and
+                            <strong>no signup required</strong>.</li>
+                    </ul>
+                    <div class="card-actions" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <a href="https://play.google.com/store/apps/details?id=com.hmproductions.ttmm"
+                            class="btn btn-outline" target="_blank"><i class="fab fa-google-play"></i> Play Store</a>
+                        <a href="https://apps.apple.com/us/app/splizzy-expense-splitter/id6760611589"
+                            class="btn btn-outline" target="_blank"><i class="fab fa-apple"></i> App Store</a>
+                    </div>
+                </div>
             </div>
-            <div class="right-container">
-                <div class="experiences">
-                    <div class="row">
-                        <div class="experience-titbit">
-                            <div class="exp-dates-location">August 2020 - Present</div>
-                            <div class="exp-title">Shopee</div>
-                            <div class="exp-position">Software Engineer</div>
-                            <div class="exp-dates-location">Singapore</div>
+        </section>
+
+        <section id="experience" class="section-container" data-aos="fade-up">
+            <h2 class="section-title">Professional <span class="text-neon-cyan">Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Shopee</h3>
+                            <span class="badge neon-cyan-badge">Senior Engineer, Android Infra / Engineer, Apps &
+                                RN</span>
+                            <span class="date">Aug 2020 – Present | Singapore</span>
                         </div>
-                        <p>I work in Android team which comes under marketplace division. I develop new business features and also support external teams 
-                            to integrate their features in Shopee app. As a member of release team, I manage regular app updates for all the countries.
-                        </p>
-                    </div> <!-- End experience row-->
+                        <ul class="experience-list">
+                            <li>Led the development of App Release Platform (ARP) to reduce app deployment time from 2
+                                hours to 2 minutes.</li>
+                            <li>Delivered Shopee Lite app, achieving 50% lower download size compared to the main app by
+                                prudently removing heavy features.</li>
+                            <li>Spearheaded dynamic feature framework that reduced initial download size by 34%,
+                                increasing user acquisition rate by 20%.</li>
+                            <li>Mentored 3 full-time hires and interns, facilitating smooth onboarding to Shopee's
+                                frameworks and systems.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                    <div class="row">
-                        <div class="experience-titbit">
-                            <div class="exp-dates-location">May 2019 - July 2019</div>
-                            <div class="exp-title">Microland</div>
-                            <div class="exp-position">Technology Intern</div>
-                            <div class="exp-dates-location">Bangalore, India</div>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Lemnis Technologies</h3>
+                            <span class="badge neon-cyan-badge">Software Developer Intern</span>
+                            <span class="date">May 2018 – July 2018 | Singapore</span>
                         </div>
-                        <p>Developed an API capable of extracting and
-                            parsing data from any IT Service Management tool
-                            like ServiceNow ITSM. API contains highly
-                            configurable settings to display data as per
-                            admin rules. API was written using Express
-                            framework and tested using Mocha framework.</p>
-                    </div> <!-- End experience row-->
-
-                    <div class="row">
-                        <div class="experience-titbit">
-                            <div class="exp-dates-location">May 2018 - July 2018</div>
-                            <div class="exp-title">Lemnis Technologies</div>
-                            <div class="exp-position">Software Developer Intern</div>
-                            <div class="exp-dates-location">Singapore</div>
-                        </div>
-                        <p>Developed an app for varifocal standalone VR
-                            headset to work with Daydream SDK. Added android
-                            Jetpack components to the existing Lemnis
-                            service which reduced boilerplate code by 40%.
-                            As part of another project, I also created
-                            simplified static environments using Google
-                            Seurat for 6 Degree of Freedom VR headset.</p>
-                    </div> <!-- End experience row-->
-
-                    <div class="row">
-                        <div class="experience-titbit">
-                            <div class="exp-dates-location">August 2017 - Present</div>
-                            <div class="exp-title">Delta Force</div>
-                            <div class="exp-position">Software Developer</div>
-                            <div class="exp-dates-location">Trichy, India</div>
-                        </div>
-                        <p>Core member of Delta Force, the premiere programming club which handles all app and web
-                            infrastructure of our university.</p>
-                    </div> <!-- End experience row-->
+                        <ul class="experience-list">
+                            <li>Created mobile services for varifocal lenses in mixed reality headsets with high visual
+                                fidelity aimed at reducing eye stress.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <section class="education" id="education">
-        <div class="generic-container education-container">
-            <div class="left-container">
-                <h6>Education</h6>
-                <p>Studying never gets old fashnioned</p>
-            </div>
-            <div class="right-container">
-                <div class="educations">
-                    <div class="row">
-                        <div class="education-titbit">
-                            <div class="exp-dates-location">July 2016 - Present</div>
-                            <div class="exp-title">National Institute of Technology Tiruchirappalli</div>
-                            <div class="exp-position">Electrical and Electronics Engineering</div>
-                            <div class="exp-dates-location">Trichy, India</div>
-                        </div>
-                        <p>Currently in my final year of Electrical and Electronics Engineering with CGPA 8.7/10.0. I'm
-                            also part of webteam which is responsible to maintain EEE department website.</p>
-                    </div> <!-- End experience row-->
-
-                    <div class="row">
-                        <div class="education-titbit">
-                            <div class="exp-dates-location">2014 - 2016</div>
-                            <div class="exp-title">Global Indian International School, Singapore</div>
-                            <div class="exp-position">AISSCE Examination</div>
-                            <div class="exp-dates-location">Singapore</div>
-                        </div>
-                        <p>Secured 96.6% in CBSE and ranked top 10 in ASEAN region with highest score in Mathematics.
-                        </p>
-                    </div> <!-- End experience row-->
+        <section id="education" class="section-container" data-aos="fade-up">
+            <h2 class="section-title">Education</h2>
+            <div class="grid-2-col">
+                <div class="glass-card flex-col">
+                    <div class="card-header">
+                        <h3>NUS Business School</h3>
+                        <span class="badge neon-purple-badge">Master of Business Administration</span>
+                        <span class="date">Aug 2024 – Expected Nov 2026 | Singapore</span>
+                    </div>
+                    <ul class="experience-list mt-auto">
+                        <li>Completed short exchange program focused on Entrepreneurship at UC Berkeley, Haas School of
+                            Business.</li>
+                        <li>Specialization in Strategy and Organization.</li>
+                        <li>Coursework: Corporate Strategy, Entrepreneurial Management, Negotiations, M&A.</li>
+                    </ul>
+                </div>
+                <div class="glass-card flex-col">
+                    <div class="card-header">
+                        <h3>National Institute of Technology, Trichy</h3>
+                        <span class="badge neon-purple-badge">B.Tech in EEE | Minor in CSE</span>
+                        <span class="date">Jul 2016 – Jun 2020 | India</span>
+                    </div>
+                    <ul class="experience-list mt-auto">
+                        <li>Presented an IEEE research paper at National Power Electronics Conference 2019.</li>
+                        <li>Head of Class Placement Committee for Software and EEE department.</li>
+                        <li>Head of Web Operations, Electrical and Electronics Association.</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="contact" id="contact">
-        <div class="generic-container contact-container">
-            <div class="left-container">
-                <h6>Contact Me</h6>
-                <p>Say Hello</p>
+        <section id="awards" class="section-container" data-aos="fade-up">
+            <h2 class="section-title">Awards & <span class="text-neon-cyan">Achievements</span></h2>
+            <div class="grid-2-col">
+                <div class="glass-card flex-row">
+                    <i class="fas fa-medal achievement-icon text-neon-cyan"></i>
+                    <div>
+                        <h4>Sports</h4>
+                        <p>Won medal in Table Tennis (doubles) at MBA Olympics 2025 hosted by Nanyang Business School
+                            (NTU).</p>
+                    </div>
+                </div>
+                <div class="glass-card flex-row">
+                    <i class="fas fa-water achievement-icon text-neon-green"></i>
+                    <div>
+                        <h4>Interests</h4>
+                        <p>Scuba Schools International (SSI) certified SCUBA diver; Ultimate Frisbee (Lead for Shopee's
+                            interest group).</p>
+                    </div>
+                </div>
+                <div class="glass-card flex-row">
+                    <i class="fas fa-hands-helping achievement-icon text-neon-purple"></i>
+                    <div>
+                        <h4>Volunteering</h4>
+                        <p>Active volunteer at the National Library Board (NLB) contributing over 50 hours on weekends.
+                        </p>
+                    </div>
+                </div>
+                <div class="glass-card flex-row">
+                    <i class="fab fa-osi achievement-icon text-white"></i>
+                    <div>
+                        <h4>Open Source</h4>
+                        <p>Contributed open source library, Scikit learn, on GitHub.</p>
+                    </div>
+                </div>
             </div>
-            <div class="right-container">
-                <div class="more-details">
-                    <div class="extra-detail">
-                        <div class="more-details-title">Play Store</div>
-                        <p>
-                            <a class="generic-link"
-                                href="https://play.google.com/store/apps/developer?id=Harsh+Mahajan&hl=en_SG">View all
-                                Apps</a>
-                        </p>
-                    </div>
-                    <div class="extra-detail">
-                        <div class="more-details-title">Web</div>
-                        <p>
-                            <a class="generic-link" href="https://www.harshmahajan.dev">harshmahajan.dev</a>
-                        </p>
-                    </div>
-                    <div class="extra-detail">
-                        <div class="more-details-title">Email</div>
-                        <p>
-                            <a href="mailto:harshmahajan927@gmail.com">harshmahajan927@gmail.com</a>
-                        </p>
-                    </div>
-                </div> <!-- End more details -->
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="copyright">
-        <p>&copy; 2022 Harsh Mahajan</p>
-    </footer>
+        <section id="pet" class="section-container" data-aos="fade-up">
+            <h2 class="section-title">Meet <span class="text-neon-cyan">Milo</span></h2>
+            <div class="glass-card" style="text-align: center;">
+                <img src="/images/milo.jpg" alt="Milo the dog" class="pet-img">
+                <h3 style="margin-bottom: 0.5rem;">My Best Friend</h3>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">When I'm not coding or thinking
+                    about new business ideas, I'm spending time with my lovely dog, Milo. He's the true mastermind
+                    behind all my successful ventures!</p>
+            </div>
+        </section>
+
+        <footer class="copyright">
+            <p>&copy; 2026 Harsh Mahajan. Designed with <span class="text-neon-cyan">&#9829;</span></p>
+        </footer>
+    </main>
 </body>
 
 </html>
