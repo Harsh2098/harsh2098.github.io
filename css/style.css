@@ -208,6 +208,17 @@ a {
     box-shadow: 0 15px 40px rgba(181, 55, 242, 0.1);
     border-color: rgba(181, 55, 242, 0.4);
 }
+.featured-card.green {
+    border-color: rgba(0, 255, 102, 0.2);
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.05);
+}
+.featured-card.green::before {
+    background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
+}
+.featured-card.green:hover {
+    box-shadow: 0 15px 40px rgba(0, 255, 102, 0.1);
+    border-color: rgba(0, 255, 102, 0.4);
+}
 .busbuddy-screenshot {
     width: 100%;
     max-width: 600px;
@@ -291,6 +302,12 @@ a {
 }
 .featured-card .experience-list li::before {
     color: var(--neon-orange);
+}
+.featured-card.purple .experience-list li::before {
+    color: var(--neon-purple);
+}
+.featured-card.green .experience-list li::before {
+    color: var(--neon-green);
 }
 .experience-list li strong {
     color: #fff;
